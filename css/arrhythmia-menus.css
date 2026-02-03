@@ -1,0 +1,461 @@
+/* Project Arrhythmia Menu CSS (WIP) */
+/* Created by DXL44 - Based on Project Arrhythmia by Vitamin Games */
+/* CSS Listing: https://toyhou.se/27625658.wip-project-arrhythmia-css */
+/* Import statement: @import '0/22649/jlLUIi/arrhythmia-menus';  */
+/* Please don't redistribute or reuse without credit! Everything else is fine.*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:wght@200..900&display=swap');
+
+
+#sidebar
+{
+  font-family:Noto Sans;
+  color: white;
+  background:  linear-gradient(180deg, rgba(1,11,11,1) 0%, rgba(19,3,3,1) 100%);
+  background-attachment:fixed;
+}
+
+.side-nav li {
+  margin: 0;
+  padding: 0;
+    padding-left: 0px;
+
+  font-size: 0.9rem;
+  border: 1px solid white;
+  margin: 6px;
+}
+
+
+.side-nav li > a {
+  display: block;
+  padding: .25em .75em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.side-nav li:hover {
+  border:1px solid yellow;
+}
+
+
+.side-nav li > a:hover {
+  background-color: black;
+}
+
+/*.side-nav li.active > a {
+  color:yellow;
+}*/
+
+.display-group
+{
+/*  display:none;*/
+/*visibility:hidden;*/
+}
+
+li > .display-group
+{
+  border:none !important;
+}
+
+.side-nav li.divider
+{
+  /*display:none;*/
+  
+  border:none !important;
+  opacity:0;
+}
+
+.side-nav li.divider:hover
+{
+  border:none !important;
+  opacity:0;
+}
+
+.side-nav li.header
+{
+  background-color:rgba(0,0,0,0);
+}
+li.header
+{
+  background-color: rgba(0,0,0,0);
+  border: none;
+  margin: 0px;
+  padding-bottom: 0em;
+  text-transform:uppercase;
+}
+
+.side-nav li.subheader {
+  background-color: transparent !important;
+  border: none;
+  margin: 0px;
+  padding-bottom: 0em;
+}
+
+
+.side-nav li.subheader > a{
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.side-nav li.subheader:hover 
+{
+  border: none;
+}
+
+li.header:hover
+{
+  border:none !important;
+}
+
+.subheader > a > .sidebar-icon
+{
+  display:none;
+}
+
+
+/* // main content */
+
+.bg-faded {
+  background-color: #0c0c0c;
+}
+
+
+/* // images */
+.img-thumbnail {
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid white;
+  border-radius:0em;
+  padding: .3rem;
+  transition: none;
+}
+
+
+.img-thumbnail:hover {
+  border: 1px solid yellow;
+}
+
+.gallery-thumb .thumb-image > a:hover {
+  box-shadow: none;
+}
+
+.thumb-character-stat {
+  color:#9b9b9b;
+  margin-right: .25rem;
+  font-family: Inconsolata;
+}
+
+/* // character */
+
+.btn.btn-default {
+  background-color: rgba(0,0,0,0);
+  border-color: #fff;
+  color: #fcfbf6;
+  font-family: Noto Sans;
+}
+
+
+.btn.btn-default:hover {
+  border-color: yellow;
+  background-color:rgba(0,0,0,0);
+}
+
+
+.thumb-character-user > .btn.btn-sm.btn-default.user-name-badge
+{
+  width:100%;
+  border-radius: 0px;
+}
+
+.thumb-character-user
+{
+  width:100%;
+}
+
+.thumb-character-name
+{
+  width:100%;
+}
+.btn.btn-sm.btn-primary.character-name-badge
+{
+  width: 100%;
+  background-color:rgba(0,0,0,0) !important;
+  font-family:Noto Sans;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size: 115%;
+  border-radius: 0px;
+}
+
+/* remove icon from character names */
+
+/* headings */
+
+.h1, h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: Noto Sans;
+  font-weight: bold;
+}
+
+.card {
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 0rem;
+}
+
+/* tables */
+.table
+{
+  border-radius:0px;
+  
+}
+
+
+.bulletin-comment-count.btn.btn-default
+{
+  font-weight:bold;
+  text-transform:uppercase;
+  
+}
+.btn
+{
+  border-radius:0px;
+}
+
+
+/* forums */
+
+.forum-category-title {
+  font-weight: bold;
+  font-family: Noto Sans;
+  text-transform: uppercase;
+  padding-left: 0;
+  font-style:normal;
+}
+
+.forum-category-forum > div.row > .col-sm-6.col-8
+{
+  font-style: italic;
+  color: #ababab;
+  font-family: Noto Sans;
+}
+/* users */
+/*
+.display-user
+{
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 17px;
+}
+*/
+
+
+
+/* Hide the top image and title on the world home page. Remove this if you want that visible. */
+/* You can also remove the "div.group-profile >div >" if you want to remove the top image and title from all pages.*/
+div.group-profile > div.profile-section.profile-name-section
+{
+  display:none;
+}
+
+/* everything */
+#content
+{
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+}
+#container
+{
+  /*background:black;*/
+  background:  linear-gradient(180deg, rgba(1,11,11,1) 0%, rgba(19,3,3,1) 100%);
+  background-attachment:fixed;
+}
+
+/* character s*/
+
+.characters-folder.child.btn.btn-default.form-control > i
+{
+  display:none;
+}
+
+.characters-folder.child.btn.btn-default.form-control 
+{
+  text-transform:uppercase;
+  font-weight:bold;
+  font-family:Noto Sans;
+}
+
+
+/* ---------- CHARACTER PAGES -------------- */
+
+.side-nav li .sidebar-stat {
+  background-color: hsla(0,0%,100%,.05);
+  border-radius: 0rem;
+  padding: 0 .75rem;
+  font-weight:normal;
+  margin-right: -0.5em;
+}
+
+.badge-primary {
+  background-color: #5ab5d1;
+  color: #0c252c;
+  font-family: Noto Sans;
+  /*text-transform: Uppercase;*/
+}
+
+a.badge-primary:focus, a.badge-primary:hover
+{
+  color:inherit;
+}
+.badge-pill
+{
+  border-radius:0px;
+}
+
+/* Apply this to all h2s */
+
+h2
+{
+  font-weight: bold;
+  font-family: Noto Sans;
+  text-transform: uppercase;
+  padding-left: 0;
+  font-style:normal;
+}
+
+/* ON all pages */
+.side-nav li.active > a
+{
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color:yellow;
+  text-decoration-thickness: 2px;
+}
+
+#footer:after
+{
+  content:"CSS by DXL44";
+}
+
+
+/* NAVBAR */
+.navbar
+{
+  background: rgba(0,0,0,0) !important;
+  font-weight: bold !important;
+  font-family: Noto Sans !important;
+}
+
+.navbar-notifications-group > .btn {
+  background-color: rgba(0,0,0,0);
+  border-radius: 0px;
+}
+
+.footer
+{
+  background:none;
+}
+
+
+/* page */
+
+.pagination > .page-item > .page-link {
+  border: 0px;
+  border-radius: 0px;
+  background: none;
+  font-family: Noto Sans;
+}
+
+/* charselect */
+.character-select-selected-character > .character-name-badge {
+  width: fit-content !important;
+}
+
+/* LINKS STUFF ------------------------------ */
+
+.link-character-icon {
+  max-width: 100%;
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: .3rem;
+  transition: none;
+}
+
+@media (min-width: 992px) {
+  .link-panel::before {
+	border:none;
+}
+}
+
+.btn
+{
+	background: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: none;
+  border-color: yellow;
+}
+
+.card.link-panel
+element {
+  background: none;
+  border: none;
+}
+
+
+.btn.btn-sm.btn-secondary.link-character-badge {
+  background: none;
+  color: white;
+  border:none;
+}
+
+.clearfix.link-badges
+{
+  direction: rtl;
+  text-align: left;
+}
+
+
+/* character favorites */
+
+
+.modal-body {
+  background: #000;
+  border: 1px solid white;
+}
+
+.user-icon {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.btn.btn-default:hover
+{
+color:white !important;
+}
+
+/*alerts */
+.alert.alert-danger
+{
+  border: 1px solid red;
+  border-radius: 0px;
+  background: rgba(255, 0, 0, 0.12);
+  font-weight: bold;
+  text-transform: uppercase;
+  /* color: ; */
+}
+
+.alert.alert-danger::before {
+  content: "ERROR:";
+  color: red;
+}
